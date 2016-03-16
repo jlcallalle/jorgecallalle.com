@@ -1,5 +1,6 @@
 // Librerias sass
 @import '../componentes/normalize-scss/normalize';
+@import '../fonts/font-awesome/scss/font-awesome';
 
 // Dependecias del proyecto
 @import 'variables';
@@ -12,3 +13,4 @@
 @import 'generales';
 
 // Secciones
+@import 'home';

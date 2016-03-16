@@ -22,3 +22,28 @@ a {
     cursor: pointer;
     outline: none;
 }
+
+
+body {
+    font-family: 'Open Sans', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    background: rgb(238, 238, 238);
+    background: rgb(61, 67, 73);
+}
+
+
+@mixin contenedor() {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contenedor {
+    @include contenedor;
+}
+
+.enlaces-breadcrumb {
+    @include clearfix;
+}
+

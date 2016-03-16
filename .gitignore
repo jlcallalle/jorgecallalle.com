@@ -1,4 +1,9 @@
 *.sublime-workspace
 *.sublime-project
 prepros.cfg
+test.html
 .DS_Store
+css/screen.css
+screen.css
+.gitkeep
+!.gitkeep

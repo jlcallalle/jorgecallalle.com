@@ -1,10 +1,155 @@
 extends ../plantillas/plantilla-principal
 
 block title
-    -var proyecto = {nombre: 'nombre', seccion: 'seccion'}
-    title #{proyecto.nombre} | #{proyecto.seccion}
+	-var proyecto = {nombre: 'Jorge Callalle', seccion: 'Web Developer'}
+	title #{proyecto.nombre} | #{proyecto.seccion}
 
 block description
-    meta(name='description', content='Descripción de la página')
+	meta(name='description', content='Somos una agencia de Marketing Digital, especializada en diseño de paginas web peru, marketing digital, redes sociales, comercio electrónico.')
+	meta(name='keywords', content='diseño web peru, diseño de paginas web peru, agencias de marketing digital peru, marketing digital peru, redes sociales peru, empresas de redes sociales, diseño de paginas web,  paginas web peru, comercio electronico, comercio electronico peru, tiendas virtuales,  facebook peru, aplicaciones para redes sociales, desarrollo de paginas web, paginas web, desarrollo web, desarrollo de sitios web, desarrollo web peru, desarrollo de sitios web peru, imagen corporativa, logotipos, intranets, aplicaciones web, posicionamiento, posicionamiento peru, seo peru, jorge callalle torres')
 block content
-    main
+	main
+		.container
+			.left-col  
+				.intrude-less
+					header#header.inner
+						.profilepic
+							a(href="#")
+								img(src="images/home/dp.jpg", alt="Imagen perfil", style="width:160px;")
+							h1
+								a(href="#") Blog
+
+							p.subtitle Strong catchphrase situation here
+							p.description Chief Architect and Technical Co-founder of TaskRabbit - neighbors helping neighbors through technology.
+
+							nav#main-nav
+								ul.main
+									li
+										a(href="#") Blog
+									li
+										a(href="#") Archives
+
+							nav#sub-nav
+								.social
+									//a.taskrabbit(href="#", title="TaskRabbit") TaskRabbit
+									a.github(href="#", title="github") GitHub
+									a.linkedin(href="#", title="linkedin") LinkedIn
+									a.twitter(href="#", title="twitter") Twitter
+									a.rss(href="#", title="rss") Feed
+
+
+
+			.mid-col
+				.mid-col-container
+					#content.inner
+
+						article.post
+							.meta
+								.date
+									time(datetime="2015-12-17T00:00:00-08:00" pubdate="" data-updated="true")  Dec 17
+										<span>th</span>, 2015
+								.tags
+									a.category(href="#") ios,
+									a.category(href="#") javascript,
+									a.category(href="#") react 
+
+
+
+
+							h1.title
+									a(href="#") React Native Launch
+							.entry-content
+								p This week, we launched our updated Tasker app to the community. This is not the app on the app store, but rather the one the Taskers use to get their work done. Functionally, not much has changed since the last release. But underneath, the app has been completely rewritten in 
+									a(href="#") React Native.
+
+								p First and foremost, a huge congratulations needs to go out to the team, especially <a href="https://twitter.com/jrichardlai">JR</a>. I’ve never been on an engineering project that went as smoothly or was as fun as this one. So good!
+
+								h2 Prototype
+
+								p I started looking into React Native in the beginning of August. It’s a really great story. First of all, it’sI’ve now decided that’s just about the best thing out there. Secondly, I was 10x more productive than when developing a regular iOS app. Finally, there was a decent chance much of the code could be reused on Android. If every feature did not have to be developed twice, we could choose to develop twice as many features or have half the engineers work on something else.
+
+								p So I dragged stories around while JR worked his butt off. This is not a small app and we hit critical functional parity (with many UI tweaks needed) at the beginning of October. We put this in the hands of some Taskers and got their feedback. From there it was getting the less critical features done, getting feedback, shipping new builds, making it prettier, and fixing bugs
+
+								h2 Stats
+
+								ul
+									li Javascript: 351 files with 37168 lines of codes
+									li Javascript: 351 files with 37168 lines of codes
+									li Javascript: 351 files with 37168 lines of codes
+									li Javascript: 351 files with 37168 lines of codes
+
+						article.post
+							.meta
+								.date
+									time(datetime="2015-12-17T00:00:00-08:00" pubdate="" data-updated="true")  Nov 8
+										<span>th</span>, 2015
+								.tags
+									a.category(href="#") ios,
+									a.category(href="#") javascript,
+									a.category(href="#") react
+							h1.title
+									a(href="#") React Native Integration Tests
+							.entry-content
+
+								p Coming from a Rails 
+									a(href="") background 
+									span  we are very familiar with testing our code. While writing our new
+
+								h2 Test Levels
+
+								p When thinking about what and how to test a React Native app, a few levels come to mind:
+
+								ul
+									li Unit: Testing some pure Javascript object and  methods. Just run in Javascript.
+									li Component: Testing a React component in isolation. ant to check its reaction to various state and props. Maybe run just in Javascript with heavy stubbing or in the simulator
+									li Integration: Testing a single screen or workflow inpp. Run in the simulator or on the device
+
+								p First and foremost, a huge congratulations needs to go out to the team, especially  I’ve never been on an engineering project that went as smoothly or was as fun as this one. So good!
+
+								h2 Prototype
+
+								p The community was also evolving rapidly. It’s super exciting to be working at the beginning of a technology that shows great promise. Each week, there would be a new thing on github that solved one of our needs. Our strategy was to put off a feature to see if the core team or community would make something available. If they did not, we went ahead and it. I’m sure everyone was doing something similar. Let’s call it bootstrap chicken
+
+								p The prototype was enough to convince me and enough to get people excited about it. Towards the end of September, JR started working full-time on it. My time in greenfield projects had to come to a close. Back to real life, but I stayed involved as the Product Manager
+
+
+								h2 Stats
+
+								ul
+									li Javascript: 351 files with 37168 lines of codes
+									li Javascript: 351 files with 37168 lines of codes
+									li Javascript: 351 files with 37168 lines of codes
+									li Javascript: 351 files with 37168 lines of codes
+									li Javascript: 351 files with 37168 lines of codes
+
+								a(href="#").more-link Read more
+
+						article.post
+							.meta
+								.date
+									time(datetime="2015-12-17T00:00:00-08:00" pubdate="" data-updated="true")  Nov 8
+										<span>th</span>, 2015
+								.tags
+									a.category(href="#") ios,
+									a.category(href="#") javascript,
+									a.category(href="#") react
+							h1.title
+									a(href="#") React Native Integration Tests
+
+							.entry-content
+								p The internal struggle of the rewrite decision eats away at developers. It could be so much better. We have learned so much. Let&#8217;s start over. It causes inaction over months accompanied by much grumbling. But if you do it, how can you make sure it doesn&#8217;t turn into a tragedy?
+
+								p I can&#8217;t say that I am happy or proud that we have rewritten TaskRabbit twice. That doesn&#8217;t feel right. Conceptually, if we would have done it correctly the first time, then it wouldn&#8217;t have been needed. Or maybe we should have done it in place. I would say that&#8217;s absolutely fair, but doesn&#8217;t capture the reality of development of the last 6 years.
+
+								p When I started writing this post, I just felt like mapping my existential crisis to Hamlet&#8217;s and now I&#8217;m heading towards defending myself against Joel&#8217;s famous stating the fact that you should never do a rewrite. I just went back and read it (again) and I (still) agree. It&#8217;s hard to argue with. Maybe it&#8217;s best to discuss the times we did rewrite to the times we didn&#8217;t
+
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sapiente, amet eos molestiae. Suscipit rerum temporibus, voluptas harum doloremque totam unde officia sequi dolorum et accusantium alias enim culpa expedita rem voluptates cum vel repellat consequatur, nulla laboriosam quos excepturi explicabo. At iusto consequatur, nihil optio voluptas aspernatur. Quos itaque nihil impedit laudantium. Natus minima impedit et nam quisquam sunt placeat odit nostrum dignissimos provident tempore totam unde modi commodi, alias, enim mollitia aliquid ex velit perspiciatis laboriosam numquam! Ea ut nemo minus voluptate, saepe doloribus? Delectus illo, animi ipsum nam at sunt. Eveniet cumque, esse quae amet aliquam rerum.
+
+								a(href="#").more-link Read more
+	
+						nav#pagenavi 
+							a.next(href="#") Next
+							.center
+								a.more-link(href="#") Blog Archives
+
+				footer#footer.inner  Copyright &copy; 2016 Jorge Callalle
